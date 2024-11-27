@@ -15,3 +15,18 @@
 body {
   background-color: var(--main-background-color);
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header * {
+  display: flex;
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
