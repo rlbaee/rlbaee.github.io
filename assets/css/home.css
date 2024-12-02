@@ -19,11 +19,28 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header * {
   display: flex;
   margin: 30px;
+}
+
+input {
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+
+  /* Add the glowing effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 a {
