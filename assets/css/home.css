@@ -158,7 +158,9 @@ main {
 }
 
 .post:hover {
-  border: 1px solid var(--text-color);
+  margin: 0 5px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+
   box-shadow: 6px 6px 10px var(--bg-color), -6px -6px 10px var(--bg-color);
 }
 
@@ -188,7 +190,7 @@ main {
 
 i.bxs-star,
 i.bx-star {
-  color: calc(var(--text-color) - rgba(0, 0, 0, 0.5));
+  color: var(--text-color);
 }
 
 i.bxs-time {
