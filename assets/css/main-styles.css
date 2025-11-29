@@ -1,0 +1,57 @@
+:root {
+  --bg-color: #141414;
+  --bg-color-alt: #1a1a1a;
+  --text-color: #e2e2e2;
+}
+
+@font-face {
+  font-family: "Surgena";
+  src: url("/assets/fonts/surgena-600.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Surgena", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-size: auto;
+}
+
+body {
+  padding: 60px 100px;
+  box-sizing: border-box;
+}
+
+/* ----- CURSOR ----- */
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.outer {
+  background: #e9e9e9;
+  mix-blend-mode: difference;
+}
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(4);
+  transition: transform 250ms ease-in-out;
+}
+
+.inner.hover {
+  background: #f7f7f7;
+  mix-blend-mode: difference;
+}
